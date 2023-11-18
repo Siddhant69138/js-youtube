@@ -1,8 +1,9 @@
 //singelton
+//const tinderUser=new Object()
 //object.create
 
-
-//object literals
+//-----------------------------------
+//object literals(Non singelton)
 const mySym=Symbol("key1")
 
 
