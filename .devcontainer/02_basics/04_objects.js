@@ -19,7 +19,7 @@ const regularUser={
 
     }
 }
-console.log(regularUser.fullname.userfullname.lastname)
+// console.log(regularUser.fullname.userfullname.lastname)
 
 //optional chaining--use of ?,discuss in future
 
@@ -37,7 +37,7 @@ const obj2={3:"a",4:"b"}
 //const obj3=Object.assign({},obj1,obj2)
 
 const obj3={...obj1,...obj2}//spread operator
-console.log(obj3)
+// console.log(obj3)
 
 //when value coming from (database)so come in form of array of object
 const users=[
@@ -53,12 +53,32 @@ const users=[
 
 users[1].email
 
-console.log(Object.keys(TinderUser));
-console.log(Object.values(TinderUser));
-console.log(Object.entries(TinderUser));
+// console.log(Object.keys(TinderUser));
+// console.log(Object.values(TinderUser));
+// console.log(Object.entries(TinderUser));
 
-console.log(TinderUser.hasOwnProperty('isLoggedIn'))
-console.log(TinderUser.hasOwnProperty('isLoggedI'))
+// console.log(TinderUser.hasOwnProperty('isLoggedIn'))
+// console.log(TinderUser.hasOwnProperty('isLoggedI'))
+//----------------
+
+
+//----object destructuring
+const course={
+    coursename:"js in hindi",
+    price:999,
+    courseInstructor:"Siddhant"
+}
+
+//course.courseInstructor
+const {courseInstructor:instructor}=course
+
+console.log(instructor)
+
+//api call
+
+
+
+
 
 
 
