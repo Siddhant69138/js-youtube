@@ -9,7 +9,7 @@
 
 ```javascript
 
-console.log("Siddhant)
+//console.log("Siddhant);
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -62,6 +62,21 @@ form.addEventListener('submit', function (e) {
   }
 });
 
+
+```
+
+## project 3 solution (clock)
+
+```javascript
+
+const clock = document.getElementById('clock');
+//const clock=document.querySelector('#clock')
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 ```
 
